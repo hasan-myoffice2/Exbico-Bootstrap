@@ -1,0 +1,91 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "_navbar";
+:root {
+  --bodyColor: #89a5ce23;
+  --priColor: #6796fb;
+  --secColor: #3cda1db4;
+  --headerColor: #6a6a6a;
+  --priFs: 46px;
+  --btnFs: 18px;
+  --btnHoverColor: #fff;
+  --secoFs: 24px;
+  --peraFs: 16px;
+  --peraColor: #262626;
+  --whiteColor: #ffffff;
+  //   Font Famaly  //
+  --Font: "Open Sans", sans-serif;
+}
+
+// Navbar Section Start
+.top-header {
+  background-color: #dce7e7;
+  font-family: var(--Font);
+  padding: 0.2rem;
+}
+
+nav {
+  font-family: var(--Font);
+  background-color: var(--whiteColor);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .nav-container {
+    background-color: var(--whiteColor);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  li a {
+    color: var(--peraColor);
+    text-decoration: none;
+    font-size: var(--peraFs);
+    font-weight: 500;
+  }
+  li {
+    position: relative;
+  }
+  a::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--priColor);
+    top: -3px;
+    transition: all 0.4s ease;
+    left: 0;
+    position: absolute;
+  }
+  a:hover::before {
+    width: 100%;
+  }
+  .nav-btn {
+    color: var(--priColor);
+    background-color: transparent;
+    background-color: var(--priColor);
+    font-size: var(--btnFs);
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .active::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--priColor);
+    position: absolute;
+    top: -3;
+    left: 0;
+  }
+  .nav-btn:hover {
+    background-color: transparent;
+    outline: 1px solid var(--priColor);
+    color: var(--priColor);
+  }
+}
+
+// Navbar Section End
