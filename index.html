@@ -717,6 +717,121 @@
     </section>
     <!-- Counting section End-->
 
+    <!-- Latest Articles -->
+    <section class="blog-section">
+        <div class="container">
+
+            <div class="swiper blogSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="./image/team-membar2 - Copy.png" alt="">
+
+                            <span class="date-badge">Sep 25</span>
+
+                            <div class="overlay">
+                                <h3>
+                                    Business is Pulvinar Metuseu Venenatis pellen Praesent
+                                </h3>
+
+                                <div class="meta">
+                                    <div class="d-flex align-items-center gap-3 ">
+                                        <div class="avator"><img src="./image/avator2.png" alt="avator-image"></div>
+                                        <span>Michael</span>
+                                    </div>
+                                    <span><i class="bi bi-chat"></i> 15 Comment</span>
+                                    <span><i class="bi bi-star-fill"></i> 45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="./image/team-membar - Copy.png" alt="">
+
+                            <span class="date-badge">Sep 25</span>
+
+                            <div class="overlay">
+                                <h3>
+                                    Business is Pulvinar Metuseu Venenatis pellen Praesent
+                                </h3>
+
+                                <div class="meta">
+                                    <div class="d-flex align-items-center gap-3 ">
+                                        <div class="avator"><img src="./image/avator2.png" alt="avator-image"></div>
+                                        <span>Michael</span>
+                                    </div>
+                                    <span><i class="bi bi-chat"></i> 15 Comment</span>
+                                    <span><i class="bi bi-star-fill"></i> 45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="./image/team-membar3.png" alt="">
+
+                            <span class="date-badge">Sep 25</span>
+
+                            <div class="overlay">
+                                <h3>
+                                    Business is Pulvinar Metuseu Venenatis pellen Praesent
+                                </h3>
+
+                                <div class="meta">
+                                    <div class="d-flex align-items-center gap-3 ">
+                                        <div class="avator"><img src="./image/avator2.png" alt="avator-image"></div>
+                                        <span>Michael</span>
+                                    </div>
+                                    <span><i class="bi bi-chat"></i> 15 Comment</span>
+                                    <span><i class="bi bi-star-fill"></i> 45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate Cards -->
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800" alt="">
+
+                            <span class="date-badge">Sep 25</span>
+
+                            <div class="overlay">
+                                <h3>
+                                    Business is Pulvinar Metuseu Venenatis pellen Praesent
+                                </h3>
+
+                                <div class="meta">
+                                    <div class="d-flex align-items-center gap-3 ">
+                                        <div class="avator"><img src="./image/avator2.png" alt="avator-image"></div>
+                                        <span>Michael</span>
+                                    </div>
+                                    <span><i class="bi bi-chat"></i> 15 Comment</span>
+                                    <span><i class="bi bi-star-fill"></i> 45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Latest End -->
+
     <!-- Contact Section Start -->
     <section class="consulting-section py-5">
         <div class="container-fluid px-0">
@@ -906,6 +1021,36 @@
 
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+    </script>
+    <!-- Script cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".blogSwiper", {
+            loop: true,
+            spaceBetween: 30,
+
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
+            }
+        });
     </script>
 </body>
 

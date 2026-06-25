@@ -1032,6 +1032,107 @@ nav {
 }
 // End
 
+// Articles Section
+.blog-section {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+  height: 420px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.date-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--priColor);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 25px;
+  color: #fff;
+  background-color: rgba(26, 24, 24, 0.664);
+}
+
+.overlay h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  .avator {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.meta span {
+  font-size: 15px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background: var(--priColor);
+  padding: 1rem;
+  color: #fff !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.swiper-button-prev {
+  left: -70px;
+}
+
+.swiper-button-next {
+  right: -70px;
+}
+
+@media (max-width: 991px) {
+  .overlay h3 {
+    font-size: 24px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+// Articles End
+
 // Contct section Start
 .consulting-section {
   background: #f5f5f5;
