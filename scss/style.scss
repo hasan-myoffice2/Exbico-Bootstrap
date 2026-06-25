@@ -1229,8 +1229,8 @@ nav {
   }
 
   .swiper-button {
-    &-next,
-    &-prev {
+    &-next1,
+    &-prev1 {
       width: 50px !important;
       height: 50px !important;
       background: #28c76f;
@@ -1241,14 +1241,6 @@ nav {
         font-size: 18px !important;
         font-weight: 700 !important;
       }
-    }
-
-    &-next {
-      margin-right: -8px !important;
-    }
-
-    &-prev {
-      margin-left: -8px !important;
     }
   }
 }
