@@ -12443,7 +12443,7 @@ nav .nav-btn:hover {
   margin-bottom: 20px;
 }
 .portfolios-section .tablink {
-  background-color: #555;
+  background-color: var(--priColor);
   color: white;
   border: none;
   outline: none;
@@ -12516,18 +12516,6 @@ nav .nav-btn:hover {
 .portfolios-section .tabcontent .portfolios:hover .bottom-shadow {
   bottom: 0;
   left: 0;
-}
-.portfolios-section #News {
-  background-color: green;
-}
-.portfolios-section #Contact {
-  background-color: blue;
-}
-.portfolios-section #About {
-  background-color: orange;
-}
-.portfolios-section #Six-Numbers {
-  background-color: teal;
 }
 
 .team-section .team-badge {
@@ -12956,21 +12944,21 @@ nav .nav-btn:hover {
   max-height: 70px;
   object-fit: contain;
 }
-.client-logo .swiper-button-nextt, .client-logo .swiper-button-prevv {
+.client-logo .swiper-button-next, .client-logo .swiper-button-prev {
   width: 50px !important;
   height: 50px !important;
   background: #28c76f;
   color: #fff !important;
   margin-top: -4rem !important;
 }
-.client-logo .swiper-button-nextt::after, .client-logo .swiper-button-prevv::after {
+.client-logo .swiper-button-next::after, .client-logo .swiper-button-prev::after {
   font-size: 18px !important;
   font-weight: 700 !important;
 }
-.client-logo .swiper-button-nextt {
+.client-logo .swiper-button-next {
   margin-right: -8px !important;
 }
-.client-logo .swiper-button-prevv {
+.client-logo .swiper-button-prev {
   margin-left: -8px !important;
 }
 
