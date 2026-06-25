@@ -12419,6 +12419,117 @@ nav .nav-btn:hover {
     bottom: 20px !important;
   }
 }
+.portfolios-section {
+  font-family: var(--Font);
+}
+.portfolios-section .portfolio-badge {
+  background-color: var(--priColor);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 28px;
+  font-size: var(--btnFs);
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+.portfolios-section .portfolio-title {
+  font-size: 24px;
+}
+.portfolios-section .btn-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.portfolios-section .tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+.portfolios-section .tablink:hover {
+  background-color: #777;
+}
+.portfolios-section {
+  /* Style the tab content (and add height:100% for full page content) */
+}
+.portfolios-section .tabcontent {
+  color: white;
+  display: none;
+  height: auto;
+}
+.portfolios-section .tabcontent .portfolios {
+  position: relative;
+  overflow: hidden;
+}
+.portfolios-section .tabcontent .portfolios .top-shadow {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.404);
+  top: 0;
+  left: -100%;
+  position: absolute;
+  transition: all 0.4s ease;
+  text-align: end;
+  padding: 1rem;
+}
+.portfolios-section .tabcontent .portfolios .bottom-shadow {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.404);
+  bottom: 0;
+  left: 100%;
+  padding: 1rem;
+  position: absolute;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: end;
+}
+.portfolios-section .tabcontent .portfolios .bottom-shadow .icons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background-color: orange;
+  transition: all 0.4s ease;
+}
+.portfolios-section .tabcontent .portfolios .bottom-shadow .icons:hover {
+  background-color: #fff;
+  color: #222;
+}
+.portfolios-section .tabcontent .portfolios img {
+  width: 100%;
+}
+.portfolios-section .tabcontent .portfolios:hover .top-shadow {
+  top: 0;
+  left: 0;
+}
+.portfolios-section .tabcontent .portfolios:hover .bottom-shadow {
+  bottom: 0;
+  left: 0;
+}
+.portfolios-section #News {
+  background-color: green;
+}
+.portfolios-section #Contact {
+  background-color: blue;
+}
+.portfolios-section #About {
+  background-color: orange;
+}
+.portfolios-section #Six-Numbers {
+  background-color: teal;
+}
+
 .team-section .team-badge {
   background-color: var(--priColor);
   color: #fff;

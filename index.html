@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap | Exbico</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- FontAwesome Icons Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Swiper CDN Link -->
@@ -224,6 +224,128 @@
         </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Our Portfolios Start -->
+    <section class="portfolios-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="portfolio-badge">Works</span>
+                <h2 class="fw-bold mt-4 portfolio-title">OUR PORTFOLIOS</h2>
+                <div class="title-line mx-auto my-3"></div>
+                <p class="w-50 mx-auto title-des">
+                    All the lorem Ipsum generators on the Internet tend to repeat
+                    predefined chunks as necessary, making this the first true
+                    generator on the Internet.
+                </p>
+            </div>
+            <div class="container">
+                <div class="btn-group">
+                    <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">Home</button>
+                    <button class="tablink" onclick="openPage('News', this, 'green')">News</button>
+                    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+                    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+                    <button class="tablink" onclick="openPage('Six-Numbers', this, 'teal')">Six Numbers</button>
+                </div>
+
+                <div id="Home" class="tabcontent">
+                    <div class="row row-gap-4">
+                        <div class="col-lg-4">
+                            <div class="portfolios">
+                                <img src="./image/work-1 (1).webp" alt="portfolios">
+                                <div class="top-shadow">
+                                    <h3>Aer & Studio</h3>
+                                    <p>UI/UX Branding</p>
+                                </div>
+                                <div class="bottom-shadow">
+                                    <div class="icons"><i class="bi bi-image"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolios">
+                                <img src="./image/work-3.webp" alt="portfolios">
+                                <div class="top-shadow">
+                                    <h3>Aer & Studio</h3>
+                                    <p>UI/UX Branding</p>
+                                </div>
+                                <div class="bottom-shadow">
+                                    <div class="icons"><i class="bi bi-image"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolios">
+                                <img src="./image/work-4.webp" alt="portfolios">
+                                <div class="top-shadow">
+                                    <h3>Aer & Studio</h3>
+                                    <p>UI/UX Branding</p>
+                                </div>
+                                <div class="bottom-shadow">
+                                    <div class="icons"><i class="bi bi-image"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolios">
+                                <img src="./image/work-5.webp" alt="portfolios">
+                                <div class="top-shadow">
+                                    <h3>Aer & Studio</h3>
+                                    <p>UI/UX Branding</p>
+                                </div>
+                                <div class="bottom-shadow">
+                                    <div class="icons"><i class="bi bi-image"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolios">
+                                <img src="./image/work-6.webp" alt="portfolios">
+                                <div class="top-shadow">
+                                    <h3>Aer & Studio</h3>
+                                    <p>UI/UX Branding</p>
+                                </div>
+                                <div class="bottom-shadow">
+                                    <div class="icons"><i class="bi bi-image"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolios">
+                                <img src="./image/work-2.webp" alt="portfolios">
+                                <div class="top-shadow">
+                                    <h3>Aer & Studio</h3>
+                                    <p>UI/UX Branding</p>
+                                </div>
+                                <div class="bottom-shadow">
+                                    <div class="icons"><i class="bi bi-image"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="News" class="tabcontent">
+                    <h3>News</h3>
+                    <p>Some news this fine day!</p>
+                </div>
+
+                <div id="Contact" class="tabcontent">
+                    <h3>Contact</h3>
+                    <p>Get in touch, or swing by for a cup of coffee.</p>
+                </div>
+
+                <div id="About" class="tabcontent">
+                    <h3>About</h3>
+                    <p>Who we are and what we do.</p>
+                </div>
+                <div id="Six-Numbers" class="tabcontent">
+                    <h3>About</h3>
+                    <p>Who we are and what we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Portfolios End -->
 
     <!-- Service Sction Start -->
     <section class="services py-5 bg-light">
@@ -766,6 +888,24 @@
                 clickable: true,
             },
         });
+    </script>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     </script>
 </body>
 
