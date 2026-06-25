@@ -1221,6 +1221,53 @@ nav {
 }
 // Contct section End
 
+// Company-logo-Section
+.client-logo {
+  background: #f3f3f3;
+
+  .logo-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    img {
+      max-width: 100%;
+      max-height: 70px;
+      object-fit: contain;
+    }
+  }
+
+  .swiper-button {
+    &-nextt,
+    &-prevv {
+      width: 50px !important;
+      height: 50px !important;
+      background: #28c76f;
+      color: #fff !important;
+      margin-top: -4rem !important;
+
+      &::after {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+      }
+    }
+
+    &-nextt {
+      margin-right: -8px !important;
+    }
+
+    &-prevv {
+      margin-left: -8px !important;
+    }
+  }
+}
+
+// Company-logo-End
+
 // Footer Section Start
 .footer-section {
   padding: 5rem 0;
