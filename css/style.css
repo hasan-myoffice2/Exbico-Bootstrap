@@ -11967,7 +11967,7 @@ nav .nav-btn:hover {
 }
 .hero-section .swiper-slide {
   padding: 120px 0;
-  background-image: url("/image/hero2.jpg");
+  background-image: url("../image/hero2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11977,7 +11977,7 @@ nav .nav-btn:hover {
 }
 .hero-section .slide-two {
   padding: 120px 0;
-  background-image: url("/image/hero3.jpg");
+  background-image: url("../image/hero3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11987,7 +11987,7 @@ nav .nav-btn:hover {
 }
 .hero-section .slide-theree {
   padding: 120px 0;
-  background-image: url("/image/hero1.jpg");
+  background-image: url("../image/hero1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
