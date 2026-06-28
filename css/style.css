@@ -12956,6 +12956,54 @@ nav .nav-btn:hover {
   font-weight: 700 !important;
 }
 
+.subscribe-section {
+  background-color: var(--secind-bodyColor);
+}
+.subscribe-section .subscribe-title h3, .subscribe-section .subscribe-title .h3 {
+  font-size: var(--secoFs);
+  color: #fff;
+}
+.subscribe-section .subscribe-title p {
+  font-size: var(--peraFs);
+  color: rgb(230, 228, 228);
+}
+.subscribe-section .input-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.subscribe-section .input-btn input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: var(--btnFs);
+}
+.subscribe-section .input-btn button {
+  padding: 0.6rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: var(--btnFs);
+  border: none;
+  outline: none;
+  background-color: var(--priColor);
+}
+.subscribe-section .input-btn button:hover {
+  outline: 2px solid var(--priColor);
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .subscribe-section {
+    padding: 1rem;
+  }
+  .input-btn {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .input-btn input {
+    width: 100%;
+  }
+}
 .footer-section {
   padding: 5rem 0;
   background: #1f2d4d;

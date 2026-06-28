@@ -1244,8 +1244,60 @@ nav {
     }
   }
 }
-
 // Company-logo-End
+
+// Subscribe Updated
+.subscribe-section {
+  background-color: var(--secind-bodyColor);
+  .subscribe-title {
+    h3 {
+      font-size: var(--secoFs);
+      color: #fff;
+    }
+    p {
+      font-size: var(--peraFs);
+      color: rgb(230, 228, 228);
+    }
+  }
+  .input-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    input {
+      padding: 0.5rem;
+      border: none;
+      outline: none;
+      font-size: var(--btnFs);
+    }
+    button {
+      padding: 0.6rem 1rem;
+      color: #fff;
+      font-weight: 500;
+      font-size: var(--btnFs);
+      border: none;
+      outline: none;
+      background-color: var(--priColor);
+    }
+    button:hover {
+      outline: 2px solid var(--priColor);
+      background-color: transparent;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .subscribe-section {
+    padding: 1rem;
+  }
+  .input-btn {
+    flex-wrap: wrap;
+    text-align: left;
+    input {
+      width: 100%;
+    }
+  }
+}
+// Subscribe End
 
 // Footer Section Start
 .footer-section {
