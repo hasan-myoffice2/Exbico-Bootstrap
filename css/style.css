@@ -11897,66 +11897,37 @@ textarea.form-control-lg {
   padding: 0.2rem;
 }
 
-nav {
-  font-family: var(--Font);
-  background-color: var(--whiteColor);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-nav .nav-container {
-  background-color: var(--whiteColor);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav .nav-container ul {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-nav li a {
+#navbar li a {
+  position: relative;
   color: var(--peraColor);
   text-decoration: none;
   font-size: var(--peraFs);
   font-weight: 500;
 }
-nav li {
-  position: relative;
-}
-nav a::before {
+#navbar li a::before {
   content: "";
-  width: 0%;
-  height: 3px;
-  background-color: var(--priColor);
+  position: absolute;
   top: -3px;
-  transition: all 0.4s ease;
   left: 0;
-  position: absolute;
-}
-nav a:hover::before {
-  width: 100%;
-}
-nav .nav-btn {
-  color: var(--priColor);
-  background-color: transparent;
-  background-color: var(--priColor);
-  font-size: var(--btnFs);
-  color: #fff;
-  border-radius: 6px;
-  border: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-nav .active::before {
-  content: "";
-  width: 20px;
+  width: 0;
   height: 3px;
-  background-color: var(--priColor);
-  position: absolute;
-  top: -3;
-  left: 0;
+  background: var(--priColor);
+  transition: all 0.4s ease;
 }
-nav .nav-btn:hover {
+#navbar li a.active::before, #navbar li a:hover::before {
+  width: 60%;
+}
+#navbar .nav-btn {
+  background-color: var(--priColor);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #fff;
+  font-size: var(--btnFs);
+  transition: all 0.4s ease;
+}
+#navbar .nav-btn:hover {
   background-color: transparent;
   outline: 1px solid var(--priColor);
   color: var(--priColor);

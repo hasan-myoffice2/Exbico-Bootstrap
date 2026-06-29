@@ -27,63 +27,41 @@
   padding: 0.2rem;
 }
 
-nav {
-  font-family: var(--Font);
-  background-color: var(--whiteColor);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  .nav-container {
-    background-color: var(--whiteColor);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    ul {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+#navbar {
+  li {
+    a {
+      position: relative;
+      color: var(--peraColor);
+      text-decoration: none;
+      font-size: var(--peraFs);
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: var(--priColor);
+        transition: all 0.4s ease;
+      }
+
+      &.active::before,
+      &:hover::before {
+        width: 60%;
+      }
     }
   }
-  li a {
-    color: var(--peraColor);
-    text-decoration: none;
-    font-size: var(--peraFs);
-    font-weight: 500;
-  }
-  li {
-    position: relative;
-  }
-  a::before {
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: var(--priColor);
-    top: -3px;
-    transition: all 0.4s ease;
-    left: 0;
-    position: absolute;
-  }
-  a:hover::before {
-    width: 100%;
-  }
   .nav-btn {
-    color: var(--priColor);
-    background-color: transparent;
     background-color: var(--priColor);
-    font-size: var(--btnFs);
-    color: #fff;
-    border-radius: 6px;
     border: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-  }
-  .active::before {
-    content: "";
-    width: 20px;
-    height: 3px;
-    background-color: var(--priColor);
-    position: absolute;
-    top: -3;
-    left: 0;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #fff;
+    font-size: var(--btnFs);
+    transition: all 0.4s ease;
   }
   .nav-btn:hover {
     background-color: transparent;
