@@ -11907,6 +11907,9 @@ textarea.form-control-lg {
   color: var(--priColor);
 }
 
+#navbar {
+  gap: 2rem !important;
+}
 #navbar li a {
   position: relative;
   color: var(--peraColor);
