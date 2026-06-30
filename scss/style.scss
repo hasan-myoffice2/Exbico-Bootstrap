@@ -162,6 +162,11 @@
     border-radius: 50%;
     height: 50px;
     background-color: #fff;
+    color: var(--priColor);
+  }
+  .play-btn:hover {
+    color: #fff;
+    background-color: var(--priColor);
   }
   .play-btn {
     position: relative;

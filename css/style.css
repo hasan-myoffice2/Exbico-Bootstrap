@@ -12019,6 +12019,11 @@ textarea.form-control-lg {
   border-radius: 50%;
   height: 50px;
   background-color: #fff;
+  color: var(--priColor);
+}
+.hero-section .play-btn:hover {
+  color: #fff;
+  background-color: var(--priColor);
 }
 .hero-section .play-btn {
   position: relative;
