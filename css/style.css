@@ -13015,12 +13015,97 @@ textarea.form-control-lg {
     width: 100%;
   }
 }
-.portfolio-page img {
+.image-box {
   width: 100%;
-  height: 250px;
+  height: 300px;
+  position: relative;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
-  opacity: 0.6;
+}
+.image-box .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5215686275);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.image-box .overlay .content .line-break {
+  width: 90px;
+  height: 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(16, 194, 185);
+  position: relative;
+}
+.image-box .overlay .content .line-break::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  border-radius: 1rem;
+  left: 45%;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+.image-box .overlay .content h3, .image-box .overlay .content .h3 {
+  font-weight: 600;
+}
+.image-box .overlay .content p {
+  color: #ffffff;
+  font-weight: 400;
+}
+.image-box .overlay .content ul li .active {
+  color: rgb(17, 214, 228);
+}
+.image-box .overlay .content ul li {
+  color: #fff;
+}
+.image-box .overlay .content ul li i {
+  font-size: 14px;
+}
+.image-box .overlay .content ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-info {
+  font-family: var(--Font);
+}
+.project-info .image-des img {
+  object-fit: cover;
+}
+.project-info .image-des h3, .project-info .image-des .h3 {
+  font-size: 30px;
+  margin-top: 2rem;
+}
+.project-info .portfolio-card h3, .project-info .portfolio-card .h3 {
+  color: var(--priColor);
+  font-weight: 600;
+}
+.project-info .portfolio-card ul li i {
+  color: var(--priColor);
+  font-size: 14px;
+}
+.project-info .portfolio-card .documents li {
+  background-color: rgba(0, 0, 0, 0.123);
+  padding: 0.8rem;
+  transition: all 0.4s ease;
+}
+.project-info .portfolio-card .documents li:hover i {
+  color: #fff;
+}
+.project-info .portfolio-card .documents li:hover {
+  background-color: var(--priColor);
+  color: #fff;
 }
 
 .footer-section {
