@@ -11860,19 +11860,6 @@ textarea.form-control-lg {
   }
 }
 :root {
-  --peraColor: #c71414;
-  --bodyColor: #89a5ce23;
-  --priColor: #0d6efd;
-  --secColor: #ff5522;
-  --headerColor: #6a6a6a;
-  --priFs: 46px;
-  --secoFs: 24px;
-  --peraFs: 15px;
-  --whiteColor: #ffffff;
-  --Font: "Open Sans", sans-serif;
-}
-
-:root {
   --tHeader-Color: #27282917;
   --secind-bodyColor: #00000080;
   --bodyColor: #f14115;
