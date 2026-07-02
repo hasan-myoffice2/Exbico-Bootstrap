@@ -13095,6 +13095,194 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.blogside-section {
+  padding: 5rem 0;
+}
+.blogside-section .card-items {
+  height: 510px;
+  position: relative;
+}
+.blogside-section .card-items h3, .blogside-section .card-items .h3 {
+  font-size: 20px;
+  line-height: 2rem;
+}
+.blogside-section .card-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogside-section .card-items .avator-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.blogside-section .card-items .title {
+  position: absolute;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5137254902);
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
+.blogside-section .search-aria {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+.blogside-section .search-aria .social-icons span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+.blogside-section .search-aria .social-icons span i {
+  font-size: 18px;
+}
+.blogside-section .search-aria h3, .blogside-section .search-aria .h3 {
+  color: var(--priColor);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.blogside-section .search-aria .divider {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.blogside-section .search-aria .divider::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: var(--priColor);
+  top: 0;
+  left: 0;
+}
+.blogside-section .search-aria form {
+  display: flex;
+}
+.blogside-section .search-aria form input {
+  padding: 0.7rem;
+  border: none;
+  font-size: 16px;
+  color: #2a2a2a;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.blogside-section .search-aria form input:focus {
+  outline: none;
+}
+.blogside-section .search-aria form button {
+  padding: 0.7rem 1rem;
+  border: none;
+  background-color: var(--priColor);
+  transition: all 0.4s ease;
+}
+.blogside-section .search-aria form button i {
+  color: #fff;
+}
+.blogside-section .search-aria form button:hover {
+  border: none;
+  background-color: #262626;
+}
+.blogside-section .search-aria form button:hover i {
+  color: #fff;
+}
+.blogside-section .search-aria .single-popular .avator-image {
+  width: 80px;
+  height: 80px;
+}
+.blogside-section .search-aria .single-popular .title p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.blogside-section .search-aria .single-popular .title span {
+  color: #928f8f;
+}
+.blogside-section .angel::before {
+  content: "";
+  width: 120px;
+  height: 60px;
+  background-color: var(--priColor);
+  top: -7%;
+  right: -15%;
+  position: absolute;
+  rotate: 45deg;
+}
+.blogside-section .angel-two::before {
+  content: "";
+  width: 120px;
+  height: 60px;
+  background-color: var(--priColor);
+  top: -6%;
+  right: -12%;
+  position: absolute;
+  rotate: 45deg;
+}
+.blogside-section .popular-tag .tag {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.blogside-section .popular-tag .tag li {
+  background-color: #f5f5f5;
+  padding: 0.5rem 0.9rem;
+  transition: all 0.4s ease;
+}
+.blogside-section .popular-tag .tag li:hover {
+  background-color: var(--priColor);
+  color: #fff;
+}
+
+.archive-section {
+  font-family: var(--Font);
+  padding: 5rem 0;
+}
+.archive-section .archive-card {
+  position: relative;
+  height: 500px;
+}
+.archive-section .archive-card img {
+  width: 100%;
+  height: 100%;
+}
+.archive-section .archive-card .baged {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: rgb(17, 176, 187);
+  padding: 0.7rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+}
+.archive-section .archive-title {
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6588235294);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.archive-section .archive-title .border-right {
+  border-right: 1px solid #fff;
+  padding: 0 1rem;
+}
+.archive-section .archive-title h2, .archive-section .archive-title .h2 {
+  font-size: 22px;
+  line-height: 2rem;
+}
+.archive-section .archive-title .avator-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 .footer-section {
   padding: 5rem 0;
   background: #1f2d4d;
