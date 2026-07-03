@@ -11861,7 +11861,7 @@ textarea.form-control-lg {
 }
 :root {
   --tHeader-Color: #27282917;
-  --secind-bodyColor: #00000080;
+  --second-bodyColor: #1f2d4d;
   --bodyColor: #f14115;
   --priColor: #1ebaa2;
   --headerColor: #6a6a6a;
@@ -12292,7 +12292,7 @@ textarea.form-control-lg {
 }
 
 .about-section {
-  background: var(--secind-bodyColor);
+  background: var(--second-bodyColor);
   padding: 100px 0;
   font-family: var(--Font);
 }
