@@ -13386,6 +13386,97 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.error-page {
+  padding: 5rem 0;
+  background-color: #e8eaec;
+}
+.error-page .error-content h1, .error-page .error-content .h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.error-page .error-content h2, .error-page .error-content .h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 15px;
+}
+.error-page .error-content p {
+  color: #666;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.error-page .error-icon {
+  font-size: 60px;
+  color: var(--priColor);
+  margin-bottom: 15px;
+}
+.error-page .btn-home {
+  background: var(--priColor);
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.error-page .btn-home:hover {
+  background: transparent;
+  outline: 1px solid var(--priColor);
+  color: var(--priColor);
+}
+
+@media (max-width: 768px) {
+  .error-content h1, .error-content .h1 {
+    font-size: 80px;
+  }
+  .error-content h2, .error-content .h2 {
+    font-size: 28px;
+  }
+}
+.mail-success {
+  padding: 5rem 0;
+}
+.mail-success .success-box {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+}
+.mail-success .success-box h1, .mail-success .success-box .h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+.mail-success .success-box h1 span, .mail-success .success-box .h1 span {
+  color: var(--priColor);
+}
+.mail-success .success-box p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.mail-success .btn-back {
+  background: var(--priColor);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+.mail-success .btn-back:hover {
+  background: transparent;
+  outline: 1px solid var(--priColor);
+  color: var(--priColor);
+}
+
 .footer-section {
   padding: 5rem 0;
   background: #1f2d4d;
