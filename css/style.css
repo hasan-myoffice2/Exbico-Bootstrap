@@ -11861,6 +11861,7 @@ textarea.form-control-lg {
 }
 :root {
   --tHeader-Color: #27282917;
+  --secondary-Color: #666562;
   --second-bodyColor: #1f2d4d;
   --bodyColor: #f14115;
   --priColor: #1ebaa2;
@@ -12954,7 +12955,7 @@ textarea.form-control-lg {
 }
 
 .subscribe-section {
-  background-color: var(--secind-bodyColor);
+  background-color: var(--secondary-Color);
 }
 .subscribe-section .subscribe-title h3, .subscribe-section .subscribe-title .h3 {
   font-size: var(--secoFs);
@@ -13331,6 +13332,58 @@ textarea.form-control-lg {
 }
 .blogside-section .articles .qoutetion .name {
   font-weight: 600;
+}
+
+.faq-section {
+  background-color: #f0f0f0;
+}
+.faq-section .badge-title {
+  background-color: var(--priColor);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.6rem 3rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+.faq-section h2, .faq-section .h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.faq-section .service-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.faq-section .service-box:hover {
+  transform: translateY(-5px);
+}
+.faq-section .service-box .icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  color: var(--priColor);
+}
+.faq-section .service-box h5, .faq-section .service-box .h5 {
+  font-weight: 600;
+  margin: 0;
+}
+.faq-section .service-box.active {
+  background: var(--priColor);
+  color: #fff;
+}
+.faq-section .service-box.active .icon {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
 .footer-section {

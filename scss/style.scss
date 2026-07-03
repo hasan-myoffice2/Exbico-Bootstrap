@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 :root {
   --tHeader-Color: #27282917;
+  --secondary-Color: #666562;
   --second-bodyColor: #1f2d4d;
   --bodyColor: #f14115;
   --priColor: #1ebaa2;
@@ -1262,7 +1263,7 @@
 
 // Subscribe Updated
 .subscribe-section {
-  background-color: var(--secind-bodyColor);
+  background-color: var(--secondary-Color);
   .subscribe-title {
     h3 {
       font-size: var(--secoFs);
@@ -1674,6 +1675,65 @@
   }
 }
 // Articles Section
+
+// Faq Section Start
+.faq-section {
+  background-color: #f0f0f0;
+  .badge-title {
+    background-color: var(--priColor);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.6rem 3rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  }
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .service-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #dcdcdc;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 20px;
+      color: var(--priColor);
+    }
+
+    h5 {
+      font-weight: 600;
+      margin: 0;
+    }
+
+    &.active {
+      background: var(--priColor);
+      color: #fff;
+
+      .icon {
+        border-color: rgba(255, 255, 255, 0.5);
+        color: #fff;
+      }
+    }
+  }
+}
+// Faq Section End
 
 // Footer Section Start
 .footer-section {
