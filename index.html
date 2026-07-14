@@ -1167,7 +1167,17 @@
     <!-- Latest Articles -->
     <section class="blog-section">
         <div class="container">
+            <div class="text-center mb-5 title-section">
+                <span class="team-badge">Blog</span>
+                <h3 class="fw-semibold mt-4">LATEST ARTICLES</h3>
+                <div class="divider mx-auto my-3"></div>
 
+                <p class="text-muted mx-auto" style="max-width:600px;">
+                    All the lorem Ipsum generators on the Internet tend to repeat
+                    predefined chunks as necessary, making this the first true
+                    generator on the Internet.
+                </p>
+            </div>
             <div class="swiper blogSwiper">
 
                 <div class="swiper-wrapper">
@@ -1379,8 +1389,8 @@
                 </div>
 
                 <!-- Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiper-button-next1"></div>
+                <div class="swiper-button-prev swiper-button-prev1"></div>
 
             </div>
         </div>
@@ -1587,15 +1597,10 @@
     <!-- Company-logo Script -->
 
     <script>
-        var swiper = new Swiper(".logoSwiper", {
+        const logoSwiper = new Swiper(".logoSwiper", {
             slidesPerView: 4,
             spaceBetween: 30,
             loop: true,
-
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
 
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -1603,19 +1608,16 @@
             },
 
             breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                576: {
+                320: {
                     slidesPerView: 2,
                 },
-                768: {
+                576: {
                     slidesPerView: 3,
                 },
                 992: {
                     slidesPerView: 4,
-                }
-            }
+                },
+            },
         });
     </script>
 

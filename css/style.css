@@ -12985,25 +12985,45 @@ nav {
   background: #ffffff;
   padding: 5rem 0;
 }
-
-.blog-card {
+.blog-section .title-section .team-badge {
+  padding: 0.4rem 3rem;
+  background-color: var(--priColor);
+  font-size: 18px;
+  font-weight: 600;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  color: #fff;
+}
+.blog-section .title-section .divider {
+  width: 80px;
+  height: 2px;
+  background-color: var(--priColor);
+  position: relative;
+}
+.blog-section .title-section .divider::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--priColor);
+  top: -3px;
+  left: 45%;
+  position: absolute;
+}
+.blog-section .blog-card {
   position: relative;
   overflow: hidden;
   height: 520px;
 }
-
-.blog-card img {
+.blog-section .blog-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.4s ease;
 }
-
-.blog-card:hover img {
+.blog-section .blog-card:hover img {
   transform: scale(1.2);
 }
-
-.date-badge {
+.blog-section .blog-card .date-badge {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -13014,8 +13034,7 @@ nav {
   font-weight: 600;
   z-index: 2;
 }
-
-.overlay {
+.blog-section .blog-card .overlay {
   position: absolute;
   left: 0;
   right: 0;
@@ -13024,64 +13043,57 @@ nav {
   color: #fff;
   background-color: rgba(26, 24, 24, 0.664);
 }
-
-.overlay h3, .overlay .h3 {
+.blog-section .blog-card .overlay h3, .blog-section .blog-card .overlay .h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 25px;
   line-height: 1.4;
 }
-
-.meta {
+.blog-section .blog-card .overlay .meta {
   display: flex;
   gap: 1rem;
   align-items: center;
   padding-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-.meta .avator {
+.blog-section .blog-card .overlay .meta .avator {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
-
-.meta span {
+.blog-section .blog-card .overlay .meta span {
   font-size: 15px;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
+.blog-section .swiper-button-next,
+.blog-section .swiper-button-prev {
   width: 40px !important;
   height: 40px !important;
   background: var(--priColor);
   padding: 1rem;
   color: #fff !important;
 }
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.blog-section .swiper-button-next::after,
+.blog-section .swiper-button-prev::after {
   font-size: 20px !important;
   font-weight: bold;
 }
-
-.swiper-button-prev {
+.blog-section .swiper-button-prev {
   left: -70px;
 }
-
-.swiper-button-next {
+.blog-section .swiper-button-next {
   right: -70px;
 }
-
 @media (max-width: 991px) {
-  .overlay h3, .overlay .h3 {
+  .blog-section .blog-card .overlay h3, .blog-section .blog-card .overlay .h3 {
     font-size: 24px;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
+  .blog-section .swiper-button-next,
+  .blog-section .swiper-button-prev {
     display: none;
   }
 }
+
 .consulting-section {
   background: #f5f5f5;
   padding: 5rem;
@@ -13165,16 +13177,18 @@ nav {
   max-height: 70px;
   object-fit: contain;
 }
-.client-logo .swiper-button-next1, .client-logo .swiper-button-prev1 {
-  width: 50px !important;
-  height: 50px !important;
+.client-logo .client-logo .swiper-button-next,
+.client-logo .client-logo .swiper-button-prev {
+  width: 50px;
+  height: 50px;
   background: #28c76f;
-  color: #fff !important;
-  margin-top: -4rem !important;
+  border-radius: 50%;
+  color: #fff;
 }
-.client-logo .swiper-button-next1::after, .client-logo .swiper-button-prev1::after {
+.client-logo .client-logo .swiper-button-next::after,
+.client-logo .client-logo .swiper-button-prev::after {
   font-size: 18px !important;
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 
 .subscribe-section {
