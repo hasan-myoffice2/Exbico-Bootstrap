@@ -13596,6 +13596,48 @@ nav {
 .blogside-section .articles .qoutetion .name {
   font-weight: 600;
 }
+.blogside-section .pagination {
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.blogside-section .pagination span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #8a8a8a;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.blogside-section .pagination .active {
+  background-color: var(--priColor);
+  border: none;
+}
+.blogside-section .pagination span:hover {
+  background-color: var(--priColor);
+  color: #fff;
+}
+.blogside-section .card-items {
+  overflow: hidden;
+  position: relative;
+}
+.blogside-section .card-items img {
+  transition: all 0.4s ease;
+}
+.blogside-section .card-items .card-baged {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: var(--priColor);
+  padding: 0.5rem 0.8rem;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.blogside-section .card-items:hover img {
+  transform: scale(1.1);
+}
 
 .faq-section {
   background-color: #f0f0f0;
