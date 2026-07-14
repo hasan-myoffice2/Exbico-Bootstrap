@@ -13658,9 +13658,6 @@ nav {
 .blogside-section .tag-and-sicial ul li:hover a {
   color: #ffffff;
 }
-.blogside-section .social-icons {
-  font-family: var(--Font);
-}
 .blogside-section .social-icons span {
   width: 40px !important;
   height: 40px !important;
