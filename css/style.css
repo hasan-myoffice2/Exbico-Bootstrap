@@ -13150,11 +13150,15 @@ nav {
 }
 
 @media (max-width: 991px) {
+  .consulting-section {
+    padding: 1rem;
+  }
   .consulting-section .consulting-img img {
     height: 400px;
+    width: 100% !important;
   }
   .consulting-section .consulting-content {
-    padding: 40px 20px;
+    padding: 10px 0px;
   }
   .consulting-section .consulting-content .section-title {
     font-size: 32px;
