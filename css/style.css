@@ -11861,7 +11861,7 @@ textarea.form-control-lg {
 }
 :root {
   --tHeader-Color: #27282917;
-  --secondary-Color: #666562;
+  --secondary-Color: #ddd;
   --second-bodyColor: #1f2d4d;
   --bodyColor: #f14115;
   --priColor: #1ebaa2;
@@ -13196,19 +13196,21 @@ nav {
 }
 .subscribe-section .subscribe-title h3, .subscribe-section .subscribe-title .h3 {
   font-size: var(--secoFs);
-  color: #fff;
+  color: #202020;
+  font-size: 24px;
+  font-weight: 500;
 }
 .subscribe-section .subscribe-title p {
   font-size: var(--peraFs);
-  color: rgb(230, 228, 228);
+  color: rgb(14, 13, 13);
 }
 .subscribe-section .input-btn {
   display: flex;
-  align-items: center;
   gap: 1rem;
 }
 .subscribe-section .input-btn input {
-  padding: 0.5rem;
+  padding: 0.6rem;
+  width: 30%;
   border: none;
   outline: none;
   font-size: var(--btnFs);
@@ -13221,22 +13223,27 @@ nav {
   border: none;
   outline: none;
   background-color: var(--priColor);
+  transition: all 0.4s ease;
+  border: 1px solid var(--priColor);
 }
 .subscribe-section .input-btn button:hover {
-  outline: 2px solid var(--priColor);
   background-color: transparent;
+  color: var(--priColor);
 }
 
 @media (max-width: 768px) {
   .subscribe-section {
-    padding: 1rem;
+    padding: 0;
   }
   .input-btn {
-    flex-wrap: wrap;
-    text-align: left;
+    flex-direction: column;
+    align-items: start;
   }
   .input-btn input {
-    width: 100%;
+    width: 100% !important;
+  }
+  .input-btn button {
+    display: inline-block !important;
   }
 }
 .image-box {
