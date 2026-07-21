@@ -177,49 +177,27 @@
     <!-- Contact Section End -->
 
     <!-- Company-Logo-Section -->
-    <section class="client-logo py-5">
-        <div class="container">
-
-            <div class="swiper logoSwiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companione.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companitwo.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companitheree.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companifoure.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companione.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
+    <section class="logo-section" id="header">
+        <div class="swiper logos-swiper container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/nuturePicture.webp" alt="image">
                 </div>
-
-                <!-- Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-
+                <div class="swiper-slide">
+                    <img src="./image/buuterFly.avif" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/marball.avif" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/lotaPata.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/newSun.jpg" alt="">
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
     <!-- Company-Logo-End -->
@@ -434,35 +412,31 @@
     </script>
     <!-- Company-logo Script -->
     <script>
-        var swiper = new Swiper(".logoSwiper", {
+        new Swiper(".logos-swiper", {
             slidesPerView: 4,
-            spaceBetween: 30,
+            spaceBetween: 20,
             loop: true,
 
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
 
             breakpoints: {
-                0: {
+                320: {
                     slidesPerView: 1,
-                },
-                576: {
-                    slidesPerView: 2,
+                    spaceBetween: 20,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 1,
+                    spaceBetween: 20,
                 },
                 992: {
                     slidesPerView: 4,
+                    spaceBetween: 20,
                 }
             }
+
         });
     </script>
 </body>

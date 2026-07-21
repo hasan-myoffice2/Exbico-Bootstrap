@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap | Exbico</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- FontAwesome Icons Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Swiper CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Bootstrap Icon Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -1350,49 +1352,27 @@
     <!-- Contact Section End -->
 
     <!-- Company-Logo-Section -->
-    <section class="client-logo py-5">
-        <div class="container">
-
-            <div class="swiper logoSwiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companione.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companitwo.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companitheree.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companifoure.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="logo-box">
-                            <img src="./image/companione.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
+    <section class="logo-section" id="header">
+        <div class="swiper logos-swiper container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/nuturePicture.webp" alt="image">
                 </div>
-
-                <!-- Arrows -->
-                <div class="swiper-button-next swiper-button-next1"></div>
-                <div class="swiper-button-prev swiper-button-prev1"></div>
-
+                <div class="swiper-slide">
+                    <img src="./image/buuterFly.avif" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/marball.avif" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/lotaPata.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/newSun.jpg" alt="">
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
     <!-- Company-Logo-End -->
@@ -1594,37 +1574,41 @@
         });
     </script>
 
-    <!-- Company-logo Script -->
-
     <script>
-        const logoSwiper = new Swiper(".logoSwiper", {
+        new Swiper(".logos-swiper", {
             slidesPerView: 4,
-            spaceBetween: 30,
+            spaceBetween: 20,
             loop: true,
 
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
 
             breakpoints: {
                 320: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
+                    spaceBetween: 20,
                 },
-                576: {
-                    slidesPerView: 3,
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
                 },
                 992: {
                     slidesPerView: 4,
-                },
-            },
+                    spaceBetween: 20,
+                }
+            }
+
         });
     </script>
 
 
+    <!-- Company-logo Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
