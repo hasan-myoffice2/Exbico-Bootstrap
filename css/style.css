@@ -12212,7 +12212,7 @@ nav {
   font-family: var(--Font);
 }
 .services .service-title {
-  font-size: var(--secoFs);
+  font-size: var(--priFs);
   color: var(--seconColor);
 }
 .services .title-des {
@@ -12483,7 +12483,7 @@ nav {
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 .portfolios-section .portfolio-title {
-  font-size: 24px;
+  font-size: var(--priFs);
 }
 .portfolios-section .btn-group {
   display: flex;
@@ -12572,6 +12572,10 @@ nav {
 
 .team-section {
   font-family: var(--Font);
+}
+.team-section .title-section h2, .team-section .title-section .h2 {
+  color: #333333;
+  font-size: var(--priFs);
 }
 .team-section .title-section .team-badge {
   padding: 0.4rem 3rem;

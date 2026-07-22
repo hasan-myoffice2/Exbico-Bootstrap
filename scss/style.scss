@@ -398,7 +398,7 @@ nav {
 .services {
   font-family: var(--Font);
   .service-title {
-    font-size: var(--secoFs);
+    font-size: var(--priFs);
     color: var(--seconColor);
   }
 
@@ -715,7 +715,7 @@ nav {
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
   }
   .portfolio-title {
-    font-size: 24px;
+    font-size: var(--priFs);
   }
   .btn-group {
     display: flex;
@@ -813,6 +813,10 @@ nav {
 .team-section {
   font-family: var(--Font);
   .title-section {
+    h2 {
+      color: #333333;
+      font-size: var(--priFs);
+    }
     .team-badge {
       padding: 0.4rem 3rem;
       background-color: var(--priColor);
