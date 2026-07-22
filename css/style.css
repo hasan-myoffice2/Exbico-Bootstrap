@@ -13019,6 +13019,13 @@ nav {
   align-items: center;
   gap: 1rem;
 }
+.counting-section .counting-box .coun-num img {
+  transition: all 0.4s ease;
+}
+.counting-section .counting-box .coun-num img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 .counting-section .counting-box .coun-num .count-title h4, .counting-section .counting-box .coun-num .count-title .h4 {
   font-size: 16px;
   color: var(--seconColor);
