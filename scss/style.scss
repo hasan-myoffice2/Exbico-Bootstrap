@@ -46,6 +46,73 @@ nav {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
+// Mobile menu Code
+.mobile-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  z-index: 9999;
+  transition: 0.4s;
+
+  &.active {
+    top: 0;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    margin-top: 30px;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin: 15px 0;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        transition: 0.3s;
+
+        &:hover {
+          color: #0d6efd;
+        }
+      }
+
+      button {
+        padding: 0.6rem 26px;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        font-size: var(--btnFs);
+        background-color: transparent;
+        background-color: var(--priColor);
+        color: #fff;
+        border: 1px solid var(--priColor);
+        border-radius: 6px;
+        margin-top: 10px;
+        transition: all 0.4s ease;
+      }
+      button:hover {
+        background-color: transparent;
+        color: var(--priColor);
+      }
+    }
+  }
+}
+// Mobile menu code End
 
 #navbar {
   gap: 2rem !important;

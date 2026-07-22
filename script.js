@@ -42,3 +42,15 @@ function counter(id, target) {
     }
   }, 30);
 }
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeMenu = document.getElementById("closeMenu");
+
+menuBtn.addEventListener("click", function () {
+  mobileMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", function () {
+  mobileMenu.classList.remove("active");
+});
