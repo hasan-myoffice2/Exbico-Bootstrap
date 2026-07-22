@@ -13768,46 +13768,97 @@ nav {
   padding: 0.6rem 1rem;
   border-radius: 3rem;
 }
-.blogside-section .comment-section {
+.blogside-section .comments-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid rgba(221, 221, 221, 0.7254901961);
+}
+.blogside-section .comments-section .divider {
+  border: none;
+  border: 0.1px solid rgba(41, 40, 40, 0.2862745098);
+}
+.blogside-section .comments-section .avator img {
+  padding: 0.3rem;
+  width: 90px;
+  height: 90px;
+  border: 1px solid var(--priColor);
+}
+.blogside-section .comments-section h4, .blogside-section .comments-section .h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.blogside-section .comments-section .text-aria h5, .blogside-section .comments-section .text-aria .h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+}
+.blogside-section .comments-section .text-aria span {
+  color: var(--priColor);
+  font-size: 13px;
+  font-weight: 600;
+}
+.blogside-section .comments-section .text-aria .riplay {
+  color: #fff;
+  padding: 0 1rem;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2d3d;
+  border-radius: 16px;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-left: 0.3rem;
+  transition: all 0.3s ease;
+}
+.blogside-section .comments-section .text-aria .riplay:hover {
+  background-color: var(--priColor);
+}
+.blogside-section .comments-section .text-aria p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6rem;
+}
+.blogside-section .post-section {
   background: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.blogside-section .comment-section .comment-wrapper {
+.blogside-section .post-section .comment-wrapper {
   background: #fff;
 }
-.blogside-section .comment-section .comment-title {
+.blogside-section .post-section .comment-title {
   font-size: 26px;
   font-weight: 700;
   color: #222;
 }
-.blogside-section .comment-section .form-label {
+.blogside-section .post-section .form-label {
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 10px;
   color: #222;
 }
-.blogside-section .comment-section .form-label i {
+.blogside-section .post-section .form-label i {
   color: var(--priColor) !important;
   margin-right: 5px;
 }
-.blogside-section .comment-section .form-control {
+.blogside-section .post-section .form-control {
   height: 50px;
   border: none;
   background: #f5f5f5;
   border-radius: 0;
   box-shadow: none;
 }
-.blogside-section .comment-section .form-control:focus {
+.blogside-section .post-section .form-control:focus {
   background: #f5f5f5;
   border: 1px solid var(--priColor);
   box-shadow: none;
 }
-.blogside-section .comment-section textarea.form-control {
+.blogside-section .post-section textarea.form-control {
   height: 180px;
   resize: none;
   padding-top: 15px;
 }
-.blogside-section .comment-section .comment-btn {
+.blogside-section .post-section .comment-btn {
   background: var(--priColor);
   color: #fff;
   padding: 0.7rem 1.2rem;
@@ -13815,7 +13866,7 @@ nav {
   font-weight: 600;
   transition: 0.3s;
 }
-.blogside-section .comment-section .comment-btn:hover {
+.blogside-section .post-section .comment-btn:hover {
   outline: 1px solid var(--priColor);
   color: var(--priColor);
   background-color: transparent;

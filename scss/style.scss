@@ -2172,7 +2172,63 @@ nav {
     }
   }
 
-  .comment-section {
+  .comments-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddddddb9;
+    .divider {
+      border: none;
+      border: 0.1px solid #29282849;
+    }
+    .avator {
+      img {
+        padding: 0.3rem;
+        width: 90px;
+        height: 90px;
+        border: 1px solid var(--priColor);
+      }
+    }
+    h4 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .text-aria {
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+      }
+      span {
+        color: var(--priColor);
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .riplay {
+        color: #fff;
+        padding: 0 1rem;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        background-color: #1f2d3d;
+        border-radius: 16px;
+        text-transform: capitalize;
+        font-size: 12px;
+        margin-left: 0.3rem;
+        transition: all 0.3s ease;
+      }
+      .riplay:hover {
+        background-color: var(--priColor);
+      }
+      p {
+        font-size: 14px;
+        color: #555555;
+        line-height: 1.6rem;
+      }
+    }
+  }
+
+  .post-section {
     background: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
