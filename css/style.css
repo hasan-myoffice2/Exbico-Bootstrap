@@ -13565,7 +13565,8 @@ nav {
   padding: 0 1rem;
 }
 .archive-section .archive-title h2, .archive-section .archive-title .h2 {
-  font-size: 22px;
+  font-size: 21px;
+  font-weight: 600;
   line-height: 2rem;
 }
 .archive-section .archive-title .avator-image {
