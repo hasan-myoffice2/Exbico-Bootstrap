@@ -13387,8 +13387,17 @@ nav {
   object-fit: cover;
 }
 .project-info .image-des h3, .project-info .image-des .h3 {
+  color: #333;
   font-size: 30px;
+  font-weight: 600;
   margin-top: 2rem;
+  margin-bottom: 10px;
+}
+.project-info .image-des p {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.7rem;
+  font-weight: 500;
 }
 .project-info .portfolio-card h3, .project-info .portfolio-card .h3 {
   color: var(--priColor);
@@ -13409,6 +13418,12 @@ nav {
 .project-info .portfolio-card .documents li:hover {
   background-color: var(--priColor);
   color: #fff;
+}
+.project-info .portfolios-content .text {
+  color: #555555;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6rem;
 }
 
 .blogside-section {

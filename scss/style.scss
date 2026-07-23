@@ -1760,8 +1760,17 @@ nav {
       object-fit: cover;
     }
     h3 {
+      color: #333;
       font-size: 30px;
+      font-weight: 600;
       margin-top: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      color: #555555;
+      line-height: 1.7rem;
+      font-weight: 500;
     }
   }
   .portfolio-card {
@@ -1786,6 +1795,14 @@ nav {
         background-color: var(--priColor);
         color: #fff;
       }
+    }
+  }
+  .portfolios-content {
+    .text {
+      color: #555555;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6rem;
     }
   }
 }
