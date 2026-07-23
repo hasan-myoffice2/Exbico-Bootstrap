@@ -12590,6 +12590,7 @@ nav {
 }
 
 .team-section {
+  padding: 5rem 0;
   font-family: var(--Font);
 }
 .team-section .title-section h2, .team-section .title-section .h2 {
