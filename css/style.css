@@ -12074,7 +12074,8 @@ nav {
   color: #555555;
 }
 .hero-section .swiper-pagination {
-  background-color: var(--priColor);
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 90px !important;
   height: 90px;
   border-radius: 50%;
