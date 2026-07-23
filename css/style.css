@@ -13207,11 +13207,13 @@ nav {
 .consulting-section .consulting-content form .btn-success {
   background: var(--priColor);
   border: none;
+  border: 1px solid var(--priColor);
   padding: 12px 30px;
   font-weight: 600;
 }
 .consulting-section .consulting-content form .btn-success:hover {
-  background: var(--priColor);
+  background: transparent;
+  color: var(--priColor);
 }
 
 @media (max-width: 991px) {

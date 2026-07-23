@@ -1552,11 +1552,13 @@ nav {
       .btn-success {
         background: var(--priColor);
         border: none;
+        border: 1px solid var(--priColor);
         padding: 12px 30px;
         font-weight: 600;
 
         &:hover {
-          background: var(--priColor);
+          background: transparent;
+          color: var(--priColor);
         }
       }
     }
@@ -1944,7 +1946,6 @@ nav {
     }
   }
 }
-
 // Blog side End
 
 // Blog Archive Section
