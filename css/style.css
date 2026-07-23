@@ -12227,6 +12227,7 @@ nav {
 }
 
 .services {
+  padding: 5rem 0;
   font-family: var(--Font);
 }
 .services .service-title {
